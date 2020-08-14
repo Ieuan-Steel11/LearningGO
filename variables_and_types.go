@@ -5,6 +5,7 @@ import "fmt"
 
 func main() {
   fmt.Println("Entry Point: \n")
+  format_printing()
 }
 
 func short_declaration_operator() {
@@ -52,7 +53,7 @@ func full_declaration() {
 func types() {
   fmt.Printf("type of variable 'global_variable': %T \n\n", global_variable)
   // %T is for the type of a varibale
-  
+
   var integer int = 5
   // %d
   var decimal float32 = 1.11
@@ -66,5 +67,27 @@ func types() {
 
   fmt.Printf("Types: \n integer: %d \n float: %.2f \n boolean: %t \n string: %s \n",
             integer, decimal, boolean, a_string)
+
+}
+
+func zero_value() {
+  var str string
+  var floating float32
+  var i int
+  var b bool
+  // declare variables without a value
+  // meaning thye have a 0 zero_value
+
+  fmt.Printf("zero values: \n string: '%s' \n float: %.2f \n int: %d \n bool: %t \n",
+              str, floating, i, b)
+}
+
+func format_printing() {
+  hello := 5
+  // initialise an int variable
+
+  fmt.Printf("value of integer: %d \nbinary of integer %b \nhexadecimal of integer: %#x",
+              hello, hello, hello)
+  // diferrent ways of printing the representations of the variable
 
 }
