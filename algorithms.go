@@ -45,17 +45,3 @@ func bubblesort(slice []int) {
   // stop measuring time
   fmt.Printf("An array with length %d \n %d swaps \n %d iterations \n %s to execute\n", len(slice), swap_count, loop_count, duration)
 }
-
-func experiment() {
-  swap_count := 0
-  loop_count := 0
-  // var to count amount of sorts required
-  start := time.Now()
-  // start measuring time
-  for j := 0; j < (len(slice) - 1); j++ {
-  
-  }
-  duration := time.Since(start)
-  // stop measuring time
-  fmt.Printf("An array with length %d \n %d swaps \n %d iterations \n %s to execute\n", len(slice), swap_count, loop_count, duration)
-}
