@@ -14,7 +14,7 @@ func main() {
     6542, 6542, 6542, 6542, 6542, 6542, 6542, 1453, 7653, 95876, 9857, 4135,
     54312, 56473, 658765, 89765, 876, 2345, 564, 543, 5123, 3145, 5314543, 5431}
   // based of an array it doesn't take a given size but values at th end
-  slice = append(slice, make([]int, 6546577)...)
+  slice = append(slice, make([]int, 2500)...)
   // create slice to be sorted
   bubblesort(slice)
 }
